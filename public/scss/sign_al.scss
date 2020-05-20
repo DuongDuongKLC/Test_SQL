@@ -1,0 +1,96 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+///..................
+.main_sign{
+    height: 49vw;
+    width: 85vw;
+    @include set_center(50%, 50% );
+    background-image: url('/picture/sign_in_up.png');
+    background-size: 100% 100%;
+    .sign_up{
+        width: 40%;
+        height: 70%;
+        position: absolute;
+        @include set_center(50%, 45%);
+        h3{
+            font-family: 'Lemonada', cursive;
+            font-size: 1.1vw;
+        }
+        h4{
+            font-family: 'Lemonada', cursive;
+            font-size: 1vw;
+        }
+        input{
+            width: 90%;
+            height: 1.5vw;
+        }
+        .btn_sign_up{
+            margin-top: 1vw;
+            width: 5vw;
+            height: 1.5vw;
+            font-family: 'Lemonada', cursive;
+            font-weight: bold;
+            font-size: 0.6vw;
+            cursor: pointer;
+        }
+    }
+    .sign_in{
+        width: 40%;
+        height: 70%;
+        position: absolute;
+        @include set_center(57%, 50%);
+        h3{
+            font-family: 'Lemonada', cursive;
+            font-size: 1.1vw;
+        }
+        h4{
+            font-family: 'Lemonada', cursive;
+            font-size: 1vw;
+        }
+        input{
+            width: 90%;
+            height: 1.5vw;
+        }
+        .btn_sign_in{
+            margin-top: 1vw;
+            width: 5vw;
+            height: 1.5vw;
+            font-family: 'Lemonada', cursive;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.6vw;
+        }
+        a{
+            font-size: 1vw;
+            font-family: 'Lemonada', cursive;
+            color: black;
+            cursor: pointer;
+            span{
+                opacity: 0;
+            }
+        }
+    }
+}

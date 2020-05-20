@@ -1,0 +1,390 @@
+// include library
+%grid_cl {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+%grid_rw {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+%center_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin set_center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+// cai dat thanh bookshelf
+body{
+    margin: 0 auto;
+}
+.main_bookshelf{
+    height: 29vw;
+    width: 100%;
+    overflow: hidden;
+    @extend %grid_rw;
+    .info_kelamchuyen{
+        height: 5vw;
+        width: 100%;
+        background: white;
+        position: relative;
+        z-index: 100;
+        img{
+            height: 4vw;
+            width: 4vw;
+            position: absolute;
+            top: 1.7vw;
+            right: 4vw;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        h3{
+            position: absolute;
+            top: 1.5vw;
+            right: 10vw;
+            font-family: 'Lemonada', cursive;
+            font-size: 1.2vw;
+        }
+    }
+    .bookshelf{
+        height: 24vw;
+        width: 100%;
+        background-image: url('/picture/booksfnn.png');
+        background-size: 100% 100%;
+        position: relative;
+        .tkb{
+            height: 77%;
+            width: 7vw;
+            @include set_center(50%, 5%);
+        }
+        .left_bookshelf{
+            height: 77%;
+            width: 31vw;
+            @include set_center(50%, 27.6% );
+            
+        }
+        .right_bookshelf{
+            height: 78%;
+            width: 55vw;
+            @include set_center(50%, 73.5% );
+            .main_sline{
+                height: 102.5%;
+                width: 100%;
+                border-bottom: 3px solid black;;
+                transform: rotate3d(1, 1, 0, 11deg);
+                position: relative;
+                img{
+                    position: absolute;
+                    height: 85%;
+                    width: 85%;
+                    bottom: 2px;
+                }
+            }
+        }
+    }
+}
+// tanh phan con
+.bookshelf{
+    .left_bookshelf{
+        display: grid;
+        align-items: flex-end;
+        grid-template-columns: 23% 17% repeat(5,12%);
+        .book_3,.book_4,.book_5,.book_6,.book_7{
+            transform: rotate3d(0,0,1, 5deg);
+            position: relative;
+            overflow: hidden;
+            img{
+                position: absolute;
+                height: 109%;
+                width: 230%;
+                bottom: 0px;
+                right: 0;
+            }
+            a{
+                position: absolute;
+                width: 70%;
+                height: 90%;
+                left: 0.7vw;
+                text-decoration: none;
+                font-family: 'Lemonada', cursive;
+                color: black;
+                font-size: 0.8vw;
+            }
+        }
+        .book_1{
+            height: 90%;
+            transform: rotate3d(0,0,1, 5deg);
+            position: relative;
+            img{
+                width: 90%;
+                height: 40%;
+                position: absolute;
+                bottom: 5px;
+                border-bottom-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+            }
+        }
+        .book_2{
+            transform: rotate3d(0,0,1, 5deg);
+            position: relative;
+            height: 100%;
+            img{
+                position: absolute;
+                height: 100%;
+                width: 90%;
+                bottom: 1vw;
+                left: 0;
+                border-radius: 3vw;
+            }
+        }
+        .book_7{
+            height: 90%;
+        }
+        .book_6{
+            height: 80%;
+            span{
+                opacity: 0;
+            }
+        }
+        .book_5{
+            height: 87%;
+        }
+        .book_4{
+            height: 80%;
+            span{
+                color: white;
+            }
+        }
+        .book_3{
+            height: 85%;
+        }
+        .book_2{
+            height: 80%;
+        }
+    }
+}
+// body
+.contact_me{
+    height: 6vw;
+    width: 100%;
+    position: relative;
+    h3{
+        position: absolute;
+        top: 1.5vw;
+        right: 10vw;
+        font-family: 'Lemonada', cursive;
+        font-size: 1vw;
+    }
+    img{
+        height: 3.5vw;
+        width: 3.5vw;
+        top: 1.5vw;
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid black;
+        right: 5vw;
+    }
+    // dang nhap dang ki
+    a{
+        font-family: 'Lemonada', cursive;
+        color: black;
+        text-decoration: none;
+        font-size: 1vw;
+        font-weight: bold;
+    }
+    .dk{
+        position: absolute;
+        top: 2.5vw;
+        right: 30vw;
+    }
+    .dn{
+        position: absolute;
+        top: 2.5vw;
+        right: 22vw;
+    }
+}
+.book_end{
+    height: 10vw;
+    width: 100%;
+}
+.main_book{
+    height: 50vw;
+    background-image: url('/picture/bg_main1.png');
+    background-size: 100% 100%;
+    position: relative;
+    .icon_book{
+        top: -5.5vw;
+        left: 2vw;
+        position: absolute;
+        height: 4vw;
+        width: 26vw;
+        h3{
+            position: absolute;
+            top: 1vw;
+            left: 6vw;
+            font-family: 'Lemonada', cursive;
+            font-size: 1vw;
+        }
+        img{
+            position: absolute;
+            height: 4vw;
+            width: 4vw;
+            border-radius: 50%;
+            border: 1px solid black;
+            left: 1vw;
+            top: 1vw;
+        }
+    }
+    .body_book{
+        top: 5vw;
+        position: absolute;
+        height: 35vw;
+        width: 75%;
+        left: 10.5vw;
+        transform: rotate3d(0,0,1, -10deg);
+        .left_book,.right_book{
+            position: absolute;
+            width: 42%;
+            height: 95%;
+        }
+        .left_book{
+            left: 3vw;
+            transform: rotate3d(0,0,1, -4deg);
+        }
+        .right_book{
+            top: 2vw;
+            right: 0;
+            transform: rotate3d(0,0,1, -5deg);
+        }
+    }
+}
+// nio dung cua sach
+.body_book{
+    .left_book{
+        display: grid;
+        grid-template-rows: repeat(4,25%);
+        .item_book{
+            width: 100%;
+            transform: rotate3d(0,0,1, -4deg);
+        }
+    }
+    .right_book{
+        display: grid;
+        grid-template-rows: repeat(4,25%);
+        .item_book{
+            width: 100%;
+            transform: rotate3d(0,0,1, 10deg);
+        }
+    }
+}
+// thanh phan coi
+.body_book{
+    .left_book,.right_book{
+        .item_book{
+            position: relative;
+            img{
+                top: 2vw;
+                right: 2vw;
+                position: absolute;
+                height: 4.5vw;
+                width: 4.5vw;
+                border-radius: 50%;
+            }
+            .content_item{
+                position: absolute;
+                width: 70%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                a{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: black;
+                    text-decoration: none;
+                    font-family: 'Lemonada', cursive;
+                    left: 5px;
+                    font-size: 1vw;
+                }
+                p{
+                    span{
+                        color: white;
+                        opacity: 0;
+                    }
+                    position: absolute;
+                    top: 2.4vw;
+                    left: 0.5vw;
+                    text-align: left;
+                    font-family: 'Lemonada', cursive;
+                    font-size: 0.9vw;
+                }
+            }
+        }
+    }
+}
+// book end
+.book_end{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    .comment{
+        height: 100%;
+        background-image: url('/picture/comment.png');
+        background-size: 100% 100%;
+        position: relative;
+        .send_comment{
+            height: 80%;
+            width: 4vw;
+            position: absolute;
+            top: 1vw;
+            right: 1vw;
+            img{
+                position: absolute;
+                top: 1vw;
+                right: 0.5vw;
+                height: 4vw;
+                width: 4vw;
+                border-radius: 50%;
+            }   
+        }
+    }
+    .info_me{
+        height: 100%;
+        background-image: url('/picture/info_me.png');
+        background-size: 100% 100%;
+        position: relative;
+        img{
+            position: absolute;
+            height: 4vw;
+            width: 4vw;
+            border-radius: 50%;
+            border: 1px solid black;
+            top: 2vw;
+            right: 2vw;
+        }
+        h3{
+            position: absolute;
+            right: 7vw;
+            top: 1.5vw;
+            font-family: 'Lemonada', cursive;
+            font-size: 1.1vw;
+        }
+        p{
+            position: absolute;
+            top: 4vw;
+            right: 7vw;
+            font-family: 'Lemonada', cursive;
+            font-size: 0.9vw;
+        }
+    }
+}

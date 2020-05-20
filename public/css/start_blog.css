@@ -1,0 +1,445 @@
+.main_bookshelf {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.main_bookshelf {
+  height: 29vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_bookshelf .info_kelamchuyen {
+  height: 5vw;
+  width: 100%;
+  background: white;
+  position: relative;
+  z-index: 100;
+}
+
+.main_bookshelf .info_kelamchuyen img {
+  height: 4vw;
+  width: 4vw;
+  position: absolute;
+  top: 1.7vw;
+  right: 4vw;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.main_bookshelf .info_kelamchuyen h3 {
+  position: absolute;
+  top: 1.5vw;
+  right: 10vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 1.2vw;
+}
+
+.main_bookshelf .bookshelf {
+  height: 24vw;
+  width: 100%;
+  background-image: url("/picture/booksfnn.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.main_bookshelf .bookshelf .tkb {
+  height: 77%;
+  width: 7vw;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_bookshelf .bookshelf .left_bookshelf {
+  height: 77%;
+  width: 31vw;
+  position: absolute;
+  top: 50%;
+  left: 27.6%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_bookshelf .bookshelf .right_bookshelf {
+  height: 78%;
+  width: 55vw;
+  position: absolute;
+  top: 50%;
+  left: 73.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_bookshelf .bookshelf .right_bookshelf .main_sline {
+  height: 102.5%;
+  width: 100%;
+  border-bottom: 3px solid black;
+  -webkit-transform: rotate3d(1, 1, 0, 11deg);
+          transform: rotate3d(1, 1, 0, 11deg);
+  position: relative;
+}
+
+.main_bookshelf .bookshelf .right_bookshelf .main_sline img {
+  position: absolute;
+  height: 85%;
+  width: 85%;
+  bottom: 2px;
+}
+
+.bookshelf .left_bookshelf {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-columns: 23% 17% (12%)[5];
+      grid-template-columns: 23% 17% repeat(5, 12%);
+}
+
+.bookshelf .left_bookshelf .book_3, .bookshelf .left_bookshelf .book_4, .bookshelf .left_bookshelf .book_5, .bookshelf .left_bookshelf .book_6, .bookshelf .left_bookshelf .book_7 {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 5deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.bookshelf .left_bookshelf .book_3 img, .bookshelf .left_bookshelf .book_4 img, .bookshelf .left_bookshelf .book_5 img, .bookshelf .left_bookshelf .book_6 img, .bookshelf .left_bookshelf .book_7 img {
+  position: absolute;
+  height: 109%;
+  width: 230%;
+  bottom: 0px;
+  right: 0;
+}
+
+.bookshelf .left_bookshelf .book_3 a, .bookshelf .left_bookshelf .book_4 a, .bookshelf .left_bookshelf .book_5 a, .bookshelf .left_bookshelf .book_6 a, .bookshelf .left_bookshelf .book_7 a {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  left: 0.7vw;
+  text-decoration: none;
+  font-family: 'Lemonada', cursive;
+  color: black;
+  font-size: 0.8vw;
+}
+
+.bookshelf .left_bookshelf .book_1 {
+  height: 90%;
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 5deg);
+  position: relative;
+}
+
+.bookshelf .left_bookshelf .book_1 img {
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  bottom: 5px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.bookshelf .left_bookshelf .book_2 {
+  -webkit-transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 5deg);
+  position: relative;
+  height: 100%;
+}
+
+.bookshelf .left_bookshelf .book_2 img {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  bottom: 1vw;
+  left: 0;
+  border-radius: 3vw;
+}
+
+.bookshelf .left_bookshelf .book_7 {
+  height: 90%;
+}
+
+.bookshelf .left_bookshelf .book_6 {
+  height: 80%;
+}
+
+.bookshelf .left_bookshelf .book_6 span {
+  opacity: 0;
+}
+
+.bookshelf .left_bookshelf .book_5 {
+  height: 87%;
+}
+
+.bookshelf .left_bookshelf .book_4 {
+  height: 80%;
+}
+
+.bookshelf .left_bookshelf .book_4 span {
+  color: white;
+}
+
+.bookshelf .left_bookshelf .book_3 {
+  height: 85%;
+}
+
+.bookshelf .left_bookshelf .book_2 {
+  height: 80%;
+}
+
+.contact_me {
+  height: 6vw;
+  width: 100%;
+  position: relative;
+}
+
+.contact_me h3 {
+  position: absolute;
+  top: 1.5vw;
+  right: 10vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.contact_me img {
+  height: 3.5vw;
+  width: 3.5vw;
+  top: 1.5vw;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid black;
+  right: 5vw;
+}
+
+.contact_me a {
+  font-family: 'Lemonada', cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.contact_me .dk {
+  position: absolute;
+  top: 2.5vw;
+  right: 30vw;
+}
+
+.contact_me .dn {
+  position: absolute;
+  top: 2.5vw;
+  right: 22vw;
+}
+
+.book_end {
+  height: 10vw;
+  width: 100%;
+}
+
+.main_book {
+  height: 50vw;
+  background-image: url("/picture/bg_main1.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.main_book .icon_book {
+  top: -5.5vw;
+  left: 2vw;
+  position: absolute;
+  height: 4vw;
+  width: 26vw;
+}
+
+.main_book .icon_book h3 {
+  position: absolute;
+  top: 1vw;
+  left: 6vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.main_book .icon_book img {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 1vw;
+  top: 1vw;
+}
+
+.main_book .body_book {
+  top: 5vw;
+  position: absolute;
+  height: 35vw;
+  width: 75%;
+  left: 10.5vw;
+  -webkit-transform: rotate3d(0, 0, 1, -10deg);
+          transform: rotate3d(0, 0, 1, -10deg);
+}
+
+.main_book .body_book .left_book, .main_book .body_book .right_book {
+  position: absolute;
+  width: 42%;
+  height: 95%;
+}
+
+.main_book .body_book .left_book {
+  left: 3vw;
+  -webkit-transform: rotate3d(0, 0, 1, -4deg);
+          transform: rotate3d(0, 0, 1, -4deg);
+}
+
+.main_book .body_book .right_book {
+  top: 2vw;
+  right: 0;
+  -webkit-transform: rotate3d(0, 0, 1, -5deg);
+          transform: rotate3d(0, 0, 1, -5deg);
+}
+
+.body_book .left_book {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (25%)[4];
+      grid-template-rows: repeat(4, 25%);
+}
+
+.body_book .left_book .item_book {
+  width: 100%;
+  -webkit-transform: rotate3d(0, 0, 1, -4deg);
+          transform: rotate3d(0, 0, 1, -4deg);
+}
+
+.body_book .right_book {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (25%)[4];
+      grid-template-rows: repeat(4, 25%);
+}
+
+.body_book .right_book .item_book {
+  width: 100%;
+  -webkit-transform: rotate3d(0, 0, 1, 10deg);
+          transform: rotate3d(0, 0, 1, 10deg);
+}
+
+.body_book .left_book .item_book, .body_book .right_book .item_book {
+  position: relative;
+}
+
+.body_book .left_book .item_book img, .body_book .right_book .item_book img {
+  top: 2vw;
+  right: 2vw;
+  position: absolute;
+  height: 4.5vw;
+  width: 4.5vw;
+  border-radius: 50%;
+}
+
+.body_book .left_book .item_book .content_item, .body_book .right_book .item_book .content_item {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.body_book .left_book .item_book .content_item a, .body_book .right_book .item_book .content_item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  text-decoration: none;
+  font-family: 'Lemonada', cursive;
+  left: 5px;
+  font-size: 1vw;
+}
+
+.body_book .left_book .item_book .content_item p, .body_book .right_book .item_book .content_item p {
+  position: absolute;
+  top: 2.4vw;
+  left: 0.5vw;
+  text-align: left;
+  font-family: 'Lemonada', cursive;
+  font-size: 0.9vw;
+}
+
+.body_book .left_book .item_book .content_item p span, .body_book .right_book .item_book .content_item p span {
+  color: white;
+  opacity: 0;
+}
+
+.book_end {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.book_end .comment {
+  height: 100%;
+  background-image: url("/picture/comment.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.book_end .comment .send_comment {
+  height: 80%;
+  width: 4vw;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+
+.book_end .comment .send_comment img {
+  position: absolute;
+  top: 1vw;
+  right: 0.5vw;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+}
+
+.book_end .info_me {
+  height: 100%;
+  background-image: url("/picture/info_me.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.book_end .info_me img {
+  position: absolute;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 2vw;
+  right: 2vw;
+}
+
+.book_end .info_me h3 {
+  position: absolute;
+  right: 7vw;
+  top: 1.5vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 1.1vw;
+}
+
+.book_end .info_me p {
+  position: absolute;
+  top: 4vw;
+  right: 7vw;
+  font-family: 'Lemonada', cursive;
+  font-size: 0.9vw;
+}
+/*# sourceMappingURL=start_blog.css.map */

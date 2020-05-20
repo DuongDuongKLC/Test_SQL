@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include include/style
+        title Đăng nhập
+    body
+        .main_sign
+            form(class="sign_in" action="/login", method="post")
+                h3 Đăng nhập ở đây !!!
+                h4 Tên đăng nhập
+                input(type="text" name="username")
+                h4 Passworrd
+                input(type="password" name="password")
+                br
+                input( class="btn_sign_in" type="submit" value="Login")
+                a(href="http://")
+                    span ___ 
+                    |Bạn quên mật khẩu ?? 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        include include/style
+        title Đăng kí tài khoản 
+    body
+        .main_sign
+            form(class="sign_up" action="register", method="post")
+                h3 Đăng kí tài khoản ở đây !!!
+                h4 Tên đăng nhập
+                input(type="text" name="username")
+                h4 Nhập email
+                input(type="text" name="email")
+                h4 Passworrd
+                input(type="password" name="password")
+                h4 Nhập lại password
+                input(type="password" name="confirm-password")
+                br
+                input( class="btn_sign_up" type="submit" value="Register")

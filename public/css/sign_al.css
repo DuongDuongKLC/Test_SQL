@@ -1,0 +1,95 @@
+.main_sign {
+  height: 49vw;
+  width: 85vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("/picture/sign_in_up.png");
+  background-size: 100% 100%;
+}
+
+.main_sign .sign_up {
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_sign .sign_up h3 {
+  font-family: 'Lemonada', cursive;
+  font-size: 1.1vw;
+}
+
+.main_sign .sign_up h4 {
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.main_sign .sign_up input {
+  width: 90%;
+  height: 1.5vw;
+}
+
+.main_sign .sign_up .btn_sign_up {
+  margin-top: 1vw;
+  width: 5vw;
+  height: 1.5vw;
+  font-family: 'Lemonada', cursive;
+  font-weight: bold;
+  font-size: 0.6vw;
+  cursor: pointer;
+}
+
+.main_sign .sign_in {
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_sign .sign_in h3 {
+  font-family: 'Lemonada', cursive;
+  font-size: 1.1vw;
+}
+
+.main_sign .sign_in h4 {
+  font-family: 'Lemonada', cursive;
+  font-size: 1vw;
+}
+
+.main_sign .sign_in input {
+  width: 90%;
+  height: 1.5vw;
+}
+
+.main_sign .sign_in .btn_sign_in {
+  margin-top: 1vw;
+  width: 5vw;
+  height: 1.5vw;
+  font-family: 'Lemonada', cursive;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.6vw;
+}
+
+.main_sign .sign_in a {
+  font-size: 1vw;
+  font-family: 'Lemonada', cursive;
+  color: black;
+  cursor: pointer;
+}
+
+.main_sign .sign_in a span {
+  opacity: 0;
+}
+/*# sourceMappingURL=sign_al.css.map */
